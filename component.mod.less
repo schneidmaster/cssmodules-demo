@@ -1,0 +1,25 @@
+@green: #008000;
+
+.outerBox {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+
+  // Make .bordered-div's inside a munged outerBox
+  // yellow rather than purple
+  :global .bordered-div {
+    border-color: yellow;
+  }
+
+  .innerBox {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+  }
+}
+
+.someOtherBox {
+  height: 100px;
+  width: 100px;
+  background-color: @green;
+}
